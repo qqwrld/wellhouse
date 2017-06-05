@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+html {
+	height: 100%;
+    font-size: 100%;
+}
+body {
+	font: 14px/20px  'Open Sans', Arial, Tahoma,  sans-serif;
+	width: 100%;
+	height: 100%;
+    color: #293237;
+    background: #faf8fb;
+}
+
+
+/* links */
+a {color: #293237;}
+a:hover,
+a:focus {color: #FF020A; text-decoration: none;}
+
+:focus {outline: none;}
+.relative {position: relative;}
+
+@media screen and (max-width: 479px) {
+    .hidden-xss {
+        display: none;
+    }
+    .col-xss-12 {width: auto; float: none;}
+    .col-xss-6 {width: 50%;}
+    .col-xss-3 {width: 25%;}
+
+}
+
+/* Каталог товаров */
+.map	{
+
+	  position: relative;
+		align-items: center;
+		margin-bottom: 30px;
+		margin-top: 720px;
+		border-bottom: 1px solid #E8ECF2;
+		border-top: 1px solid #E8ECF2;
+
+}
+.product-wrap {
+    border: 0px solid #dcdcdc;
+    background: #FFF;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+.product1 {
+    padding: 20px 20px 25px;
+    border-right: 1px solid #E8ECF2;
+    border-bottom: 1px solid #E8ECF2;
+}
+.product {
+    height: 400px;
+    padding: 20px 20px 25px;
+    border-right: 1px solid #E8ECF2;
+    border-bottom: 1px solid #E8ECF2;
+}
+.product:hover {
+    -webkit-box-shadow: 4px 8px 10px rgba(217,223,231, 0.6);
+       -moz-box-shadow: 4px 8px 10px rgba(217,223,231, 0.6);
+         -o-box-shadow: 4px 8px 10px rgba(217,223,231, 0.6);
+            box-shadow: 4px 8px 10px rgba(217,223,231, 0.6);
+}
+.product:nth-child(3n) {border-right: none;}
+
+.text-text {
+    position: relative;
+    text-align: center;
+    height: 60px;
+    margin-bottom: 0px;
+		margin-top: 20px;
+    border-bottom: 1px solid #E8ECF2;
+}
+.text-text1 {
+    position: relative;
+    text-align: center;
+    height: 60px;
+    margin-bottom: 0px;
+		margin-top: 20px;
+    border-bottom: 1px solid #E8ECF2;
+		height: 1040px;
+}
+.text-about-us {
+
+	position:relative;
+	height: 700px;
+	float: left;
+	border-bottom: 1px solid #E8ECF2;
+	margin-bottom: 60px;
+	margin-top: 20px;
+	border-bottom: 1px solid #E8ECF2;
+
+}
+.text-map {
+	min-height: 400px;
+	position:absolute;
+}
+
+.product-slide {
+    position: relative;
+    text-align: center;
+    height: 240px;
+    margin-bottom: 15px;
+		margin-top: 15px;
+    border-bottom: 1px solid #E8ECF2;
+}
+.product-info {
+    position: relative;
+    text-align: left;
+    height: 1040px;
+    margin-bottom: 15px;
+		margin-top: 15px;
+    border-bottom: 1px solid #E8ECF2;
+}
+.product-info-left {
+		 width: 50%;
+     min-height: 20px;
+     float: left;
+
+
+}
+.product-info-right {
+	 width: 50%;
+	 min-height: 20px;
+	 float: left;
+
+}
+.product-info-p {
+	 min-height: 150px;
+	 float: left;
+	 border-top: 1px solid #E8ECF2;
+	 border-bottom: 1px solid #E8ECF2;
+
+}
+.product-img {
+    position: relative;
+    text-align: center;
+    height: 240px;
+    margin-bottom: 15px;
+		margin-top: 15px;
+    border-bottom: 1px solid #E8ECF2;
+}
+.product-img img {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+}
+.product-footer {
+    height: 75px;
+}
+.product-footer h5 {
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+}
+.product-footer h5 a {
+    font-weight: 600;
+}
+
+.cat {
+    font-size: 13px;
+    color: #78828c;
+}
+
+.price {
+    font-weight: 900;
+    font-size: 14px;
+    color: #E30613;
+}
+
+.review {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: 195px;
+    margin: -25px 0 0 -93px;
+    padding: 12px 12px 12px 50px;
+    color: #fff;
+    text-align: left;
+    cursor: pointer;
+    background: rgba(0,0,0, 0.7) url(../img/occhi.png) no-repeat 15px center;
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
+}
+.product-img:hover .review {display: block;}
+
+
+
+/* Кнопка показть больше */
+.btn-more {
+    display: inline-block;
+    margin: 40px 0 20px;
+    padding: 20px 50px;
+    color: white;
+    font: 600 14px/20px "Open Sans", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #e30613;
+    background-image: linear-gradient(to top, #cb0611 0%, #e30613 100%);
+    border-radius: 7px;
+}
+.btn-more:visited {color: #fff;}
+.btn-more:hover {
+    color: #fff;
+    background: #B20107;
+}
+.btn-more i {
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+    height: 5px;
+    width: 23px;
+    background: url(../img/icon-more.png) no-repeat;
+}
+
+@media screen and (max-width: 479px) {
+    .main-title {font-size: 18px;}
+}
+
+
+/* Копирайт */
+#copy {
+    padding: 10px 0;
+    background: #000;
+}
+
+.copy {
+    margin-bottom: 0;
+    color: rgba(255,255,255, 0.3);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+@media screen and (max-width: 479px) {
+    .footer__top {text-align: center;}
+}
+
+
+/* Указание шрифта и размера текста
+----------------------------------*/
+.ui-widget {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 1.1em;
+}
+.ui-widget .ui-widget {
+    font-size: 1em;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 1em;
+}
